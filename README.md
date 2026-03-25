@@ -4,7 +4,7 @@ A modern, responsive portfolio built using HTML and CSS to showcase my skills, p
 
 ## 🚀 Live Demo:
 
-🔗 https://yourusername.github.io/portfolio-website
+🔗 https://github.com/Puliteja2006/portfolio-website/tree/main
 
 
 ## 🧠 About the Project:
