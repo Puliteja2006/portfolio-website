@@ -1,0 +1,290 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  background: linear-gradient(-45deg, #0f172a, #1e293b, #020617, #0f172a);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background: rgba(30,41,59,0.85);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  flex-wrap: wrap;
+}
+
+header h2 {
+  color: #38bdf8;
+}
+
+nav a {
+  margin-left: 15px;
+  color: #cbd5f5;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 42px;
+  animation: slideUp 1s ease;
+}
+
+.hero span {
+  color: #38bdf8;
+}
+
+.hero p {
+  margin-top: 10px;
+  color: #94a3b8;
+  animation: fadeIn 2s ease;
+}
+
+/* Buttons */
+.buttons a {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  border-radius: 25px;
+  background: #38bdf8;
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.buttons a:hover {
+  transform: scale(1.1);
+  background: #0ea5e9;
+}
+
+/* Sections */
+section {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+/* Fade Animation */
+.fade {
+  animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Skills */
+.skill {
+  margin: 15px auto;
+  width: 60%;
+  text-align: left;
+}
+
+.skill p {
+  margin-bottom: 5px;
+}
+
+.bar {
+  background: #1e293b;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.fill {
+  height: 10px;
+  border-radius: 10px;
+  animation: loadBar 2s ease forwards;
+}
+
+/* Skill Levels */
+.html { width: 90%; background: #38bdf8; }
+.css { width: 85%; background: #38bdf8; }
+.js { width: 70%; background: #38bdf8; }
+.java { width: 80%; background: #38bdf8; }
+.spring { width: 75%; background: #38bdf8; }
+.dsa { width: 70%; background: #38bdf8; }
+
+/* Projects */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #1e293b;
+  margin: 15px;
+  padding: 20px;
+  width: 260px;
+  border-radius: 12px;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 15px #38bdf8;
+}
+
+.card a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+/* Project Links */
+.project-links {
+  margin-top: 10px;
+}
+
+.project-links a {
+  display: inline-block;
+  margin: 5px;
+  padding: 6px 12px;
+  background: #38bdf8;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.project-links a:hover {
+  background: #0ea5e9;
+}
+
+/* Certifications */
+.certifications {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cert-card {
+  background: #1e293b;
+  margin: 15px;
+  padding: 20px;
+  width: 260px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.cert-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 15px #38bdf8;
+}
+
+/* Timeline */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item {
+  background: #1e293b;
+  padding: 15px;
+  margin: 10px;
+  width: 300px;
+  border-left: 4px solid #38bdf8;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  background: #1e293b;
+  text-align: center;
+}
+
+/* Animations */
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes loadBar {
+  from { width: 0; }
+}
+
+/* Responsive */
+@media(max-width:768px) {
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+
+  .certifications {
+    flex-direction: column;
+  }
+
+  .skill {
+    width: 90%;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .card, .cert-card {
+    width: 90%;
+  }
+}
+
