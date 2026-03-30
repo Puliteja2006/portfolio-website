@@ -5,7 +5,7 @@
 
 ## 🚀 Live Demo:
 
-🔗 https://yourusername.github.io/portfolio-website
+🔗 https://github.com/Puliteja2006/portfolio-website
 
 
 ## 🧠 Project Overview:
